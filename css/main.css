@@ -1,0 +1,42 @@
+/* Colors */
+:root {
+  /* Primary */
+  --red: hsl(0, 100%, 74%);
+  --green: hsl(154, 59%, 51%);
+
+/* ### Accent */
+  --blue: hsl(248, 32%, 49%);
+
+/* ### Neutral */
+  --darkBlue: hsl(249, 10%, 26%);
+  --grayishBlue: hsl(246, 25%, 77%);
+}
+
+*, *::after, *::before {
+  box-sizing: border-box;
+}
+
+body {
+  margin: 0;
+  font-size: 16px;
+  font-family: 'Poppins', sans-serif;
+  background-color: var(--red);
+}
+
+.wrapper {
+  margin: 0 auto;
+  display: grid;
+  max-width: 1440px;
+  min-height: 100vh;
+  align-items: center;
+  justify-items: center;
+}
+
+.attribution {
+  font-size: 11px;
+  text-align: center;
+}
+
+.attribution a {
+  color: hsl(228, 45%, 44%);
+}
