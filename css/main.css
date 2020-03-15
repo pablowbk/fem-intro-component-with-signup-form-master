@@ -1,36 +1,91 @@
+@import url('https://fonts.googleapis.com/css?family=Poppins:400,500,600,700&display=swap');
+
 /* Colors */
 :root {
   /* Primary */
   --red: hsl(0, 100%, 74%);
   --green: hsl(154, 59%, 51%);
 
-/* ### Accent */
+  /* ### Accent */
   --blue: hsl(248, 32%, 49%);
 
-/* ### Neutral */
+  /* ### Neutral */
   --darkBlue: hsl(249, 10%, 26%);
   --grayishBlue: hsl(246, 25%, 77%);
 }
 
-*, *::after, *::before {
+*,
+*::after,
+*::before {
   box-sizing: border-box;
+  margin: 0;
+  padding: 0;
 }
 
 body {
-  margin: 0;
   font-size: 16px;
   font-family: 'Poppins', sans-serif;
-  background-color: var(--red);
 }
 
-.wrapper {
-  margin: 0 auto;
-  display: grid;
-  max-width: 1440px;
-  min-height: 100vh;
-  align-items: center;
-  justify-items: center;
+button {
+  border: none;
+  background: none;
+  display: block;
+  color: currentColor;
 }
+
+main {
+  display: grid;
+  justify-items: center;
+  align-items: center;
+  color: #fff;
+}
+
+.grid-container {
+  max-width: 375px;
+  background: var(--red);
+  background-image: url("../images/bg-intro-mobile.png");
+  grid-template-areas: "intro" "cta" "signup";
+}
+
+.intro {
+  grid-area: intro;
+
+}
+
+.intro h1 {
+
+}
+
+.cta {
+  grid-area: cta;
+}
+
+.cta-button {
+  background: var(--blue);
+}
+
+.cta-button .bold {
+  font-weight: 600;
+}
+
+
+.signup {
+  grid-area: signup;
+}
+
+.form {
+  background: #fff;
+}
+
+.form-button {
+  background: var(--green);
+}
+
+
+
+
+/* footer */
 
 .attribution {
   font-size: 11px;
@@ -38,5 +93,5 @@ body {
 }
 
 .attribution a {
-  color: hsl(228, 45%, 44%);
+  color: var(--red);
 }
