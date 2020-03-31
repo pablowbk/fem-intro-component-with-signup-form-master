@@ -37,8 +37,8 @@ button {
 main {
   display: grid;
   justify-items: center;
-  align-items: center;
   color: #fff;
+  min-height: 100vh;
 }
 
 .grid-container {
@@ -46,15 +46,24 @@ main {
   background: var(--red);
   background-image: url("../images/bg-intro-mobile.png");
   grid-template-areas: "intro" "cta" "signup";
+  display:grid;
+  justify-items: center;
 }
 
 .intro {
   grid-area: intro;
+  margin: 5em 0 0 0;
 
 }
 
 .intro h1 {
+  text-align: center;
+  margin-bottom: 1em;
+  font-size: 1.75em;
+}
 
+.intro p {
+  text-align: center;
 }
 
 .cta {
@@ -62,6 +71,7 @@ main {
 }
 
 .cta-button {
+  padding: 2em;
   background: var(--blue);
 }
 
